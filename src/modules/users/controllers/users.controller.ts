@@ -1,9 +1,9 @@
 import { InternalServerErrorException } from 'src/common/exception/internalServerErrorException';
-import { ApiResponseDto } from 'src/common/dto/controllerDto';
+import { ApiResponseDto } from 'src/dto/controllerDto';
 import { UsersService } from '../services/users.service';
 import { Controller, Get, Query } from '@nestjs/common';
 import { userControllerDto } from './users.controller.dto';
-import { IUserGet, userDto } from '../users.dto';
+import { IUserGet, userDto } from '../dto/users.dto';
 
 @Controller('users')
 export class UsersController implements userControllerDto {

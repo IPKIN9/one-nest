@@ -1,7 +1,7 @@
-import { ServiceResponseDto } from 'src/common/dto/serviceDto';
+import { ServiceResponseDto } from 'src/dto/serviceDto';
 import { Injectable } from '@nestjs/common';
 import { userServiceDto } from './users.service.dto';
-import { IUserGet, userDto } from '../users.dto';
+import { IUserGet, userDto } from '../dto/users.dto';
 
 @Injectable()
 export class UsersService implements userServiceDto {
